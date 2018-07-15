@@ -34,3 +34,13 @@ eine Schrift (§ 11 Absatz 3) des in Nummer 1 Buchstabe a bis c bezeichneten Inh
 (5) Absatz 2 Nummer 1 und 3 gilt auch für eine Schrift (§ 11 Absatz 3) des in den Absätzen 3 und 4 bezeichneten Inhalts. Nach Absatz 2 Nummer 2 wird auch bestraft, wer einen in den Absätzen 3 und 4 bezeichneten Inhalt mittels Rundfunk oder Telemedien einer Person unter achtzehn Jahren oder der Öffentlichkeit zugänglich macht.
 (6) In den Fällen des Absatzes 2 Nummer 1 und 2, auch in Verbindung mit Absatz 5, ist der Versuch strafbar.
 (7) In den Fällen des Absatzes 2, auch in Verbindung mit Absatz 5, und in den Fällen der Absätze 3 und 4 gilt § 86 Abs. 3 entsprechend.
+
+
+## Bookmarks
+
+### Neo4J
+
+* https://github.com/neo4j/neo4j
+* https://github.com/neo4j/neo4j-java-driver
+* https://github.com/neo4j/neo4j-documentation
+* https://github.com/neo4j/neo4j-ogm
