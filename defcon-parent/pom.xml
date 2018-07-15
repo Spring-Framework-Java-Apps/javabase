@@ -239,12 +239,6 @@
                 <version>2.0.1.RELEASE</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.jbake</groupId>
-                <artifactId>jbake-maven-plugin</artifactId>
-                <version>${jbake-maven-plugin.version}</version>
-            </dependency>
-
         </dependencies>
 
     </dependencyManagement>
@@ -462,6 +456,11 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jxr-plugin</artifactId>
                     <version>${maven-jxr-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.jbake</groupId>
+                    <artifactId>jbake-maven-plugin</artifactId>
+                    <version>${jbake-maven-plugin.version}</version>
                 </plugin>
             </plugins>
         </pluginManagement>

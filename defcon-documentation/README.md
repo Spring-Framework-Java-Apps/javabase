@@ -22,6 +22,8 @@ You can also more details on each goal by running the help goal:
 
     $ mvn jbake:help -Ddetail # -DgoalName=[seed|generate|watch|inline]
 
+### Goo to know
+* https://blog-de.akquinet.de/2015/04/02/integration-von-jbake-in-maven-statische-websites/
 
 [http://localhost:8080]:http://localhost:8080 (defcon :: documentation by jbake)
 [https://jbake.org/]:https://jbake.org/ (jbake)
