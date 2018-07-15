@@ -34,3 +34,6 @@ buildNumber.properties
 /nbdist/
 /.nb-gradle/
 
+### Apllication ####
+conf.sh
+

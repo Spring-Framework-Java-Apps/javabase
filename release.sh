@@ -3,14 +3,7 @@
 
 source conf.sh
 
-export DATASOURCE_URL='jdbc:postgresql://localhost:5432/kandidatenrelease?user=kandidatenrelease&password=kandidatenreleasepwd'
-
-export DATASOURCE_USERNAME=kandidatenrelease
-export DATASOURCE_PASSWORD=kandidatenreleasepwd
-
-export BTW17_JPA_HIBERNATE_DDL_AUTO=update
-
-./mvnw clean install
+./mvnw $DEFCON1_PROFILE_RELEASE clean install
 
 ./mvnw clean spring-boot:run
 
