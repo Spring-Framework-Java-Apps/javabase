@@ -2,9 +2,9 @@
 
 source ../defcon-parent/conf.sh
 
-mvn_jbake_help
+#mvn_jbake_help
 
-#run_jbake_seed
+run_jbake_seed
 
 #mvn_jbake_run
 
