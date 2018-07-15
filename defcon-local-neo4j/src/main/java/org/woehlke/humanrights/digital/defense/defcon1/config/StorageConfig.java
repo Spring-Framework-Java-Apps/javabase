@@ -33,7 +33,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 )
 @EnableTransactionManagement
 @EnableConfigurationProperties({
-    JpaProperties.class,
+    //JpaProperties.class,
     Neo4jProperties.class,
     DataSourceProperties.class
 })
@@ -72,15 +72,15 @@ public class StorageConfig {
     }
 
 
-    private final JpaProperties jpaProperties;
+    //private final JpaProperties jpaProperties;
 
     private final Neo4jProperties neo4jProperties;
 
     private final DataSourceProperties dataSourceProperties;
 
     @Autowired
-    public StorageConfig(JpaProperties jpaProperties, Neo4jProperties neo4jProperties, DataSourceProperties dataSourceProperties) {
-        this.jpaProperties = jpaProperties;
+    public StorageConfig(Neo4jProperties neo4jProperties, DataSourceProperties dataSourceProperties) {
+        //this.jpaProperties = jpaProperties;
         this.neo4jProperties = neo4jProperties;
         this.dataSourceProperties = dataSourceProperties;
     }

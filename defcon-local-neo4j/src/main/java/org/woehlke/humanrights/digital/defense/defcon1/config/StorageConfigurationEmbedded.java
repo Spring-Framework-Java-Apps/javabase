@@ -9,8 +9,8 @@ import org.neo4j.ogm.drivers.embedded.driver.EmbeddedDriver;
 import org.neo4j.ogm.session.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.data.neo4j.Neo4jProperties;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
-import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
+//import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+//import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -36,7 +36,9 @@ import java.util.List;
 })
 public class StorageConfigurationEmbedded {
 
-    private final String packages[] = {  "org.woehlke.humanrights.digital.defense.defcon1.storage.neo4j.domain"  };
+    private final String packages[] = {
+        "org.woehlke.humanrights.digital.defense.defcon1.storage.neo4j.domain"
+    };
 
 	private final String graphDbFileName  = "target/var/graphDb";
 
@@ -76,11 +78,11 @@ public class StorageConfigurationEmbedded {
     @Autowired
     private Neo4jConfigurationLogger neo4jConfigurationLogger;
 
-    @Autowired
-    private JpaProperties jpaProperties;
+    //@Autowired
+    //private JpaProperties jpaProperties;
 
-    @Autowired
-    private DataSourceProperties dataSourceProperties;
+    //@Autowired
+    //private DataSourceProperties dataSourceProperties;
 
     @Autowired
     private Neo4jProperties neo4jProperties;

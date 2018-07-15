@@ -6,6 +6,6 @@ source ../defcon-parent/conf.sh
 #mvn_build
 #mvn_site
 #mvn_travis
-#mvn_run
+mvn_run
 
 exit 0

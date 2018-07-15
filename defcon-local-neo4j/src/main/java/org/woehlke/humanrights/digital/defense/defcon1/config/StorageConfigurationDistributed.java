@@ -27,9 +27,9 @@ import org.springframework.context.annotation.Profile;
     "travis"
 })
 @EnableConfigurationProperties({
-    JpaProperties.class,
-    Neo4jProperties.class,
-    DataSourceProperties.class
+    //JpaProperties.class,
+    Neo4jProperties.class//,
+    //DataSourceProperties.class
 })
 public class StorageConfigurationDistributed {
 

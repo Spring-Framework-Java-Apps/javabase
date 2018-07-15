@@ -11,6 +11,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.web.authentication.RememberMeServices;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 import org.springframework.session.data.redis.RedisOperationsSessionRepository;
+import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
 import org.springframework.session.security.SpringSessionBackedSessionRegistry;
 import org.springframework.session.security.web.authentication.SpringSessionRememberMeServices;
 import org.springframework.validation.beanvalidation.MethodValidationPostProcessor;
@@ -31,7 +32,7 @@ import org.woehlke.humanrights.digital.defense.defcon1.config.properties.Applica
 @Configuration
 @EnableWebMvc
 @EnableWebSecurity
-//@EnableRedisHttpSession
+@EnableRedisHttpSession
 //@EnableSpringDataWebSupport
 @EnableConfigurationProperties({
     //AllProperties.class,

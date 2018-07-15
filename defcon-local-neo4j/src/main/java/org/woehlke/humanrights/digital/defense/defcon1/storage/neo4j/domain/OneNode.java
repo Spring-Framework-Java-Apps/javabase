@@ -15,6 +15,13 @@ public class OneNode {
     private Long id;
     private String title;
 
+    public OneNode() {
+    }
+
+    public OneNode(String title) {
+        this.title = title;
+    }
+
     public Long getId() {
         return id;
     }
