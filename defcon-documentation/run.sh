@@ -2,10 +2,8 @@
 
 source ../defcon-parent/conf.sh
 
-#mvn_fast_build
-#mvn_build
-#mvn_site
-#mvn_travis
-#mvn_run
+mvn_jbake_help
+
+#mvn_jbake_run
 
 exit 0
