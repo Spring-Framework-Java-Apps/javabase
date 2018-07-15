@@ -18,6 +18,10 @@
 	<name>defcon :: defcon I :: </name>
 	<description>Time for a Change</description>
 
+    <properties>
+        <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version>
+    </properties>
+
     <!--
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -92,6 +96,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
+                        <version>${maven-surefire-plugin.version}</version>
                         <configuration>
                             <skipTests>true</skipTests>
                         </configuration>
