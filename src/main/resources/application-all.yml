@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: combineddatabases
+  data:
+    redis:
+      host: localhost
+      password:
+      port: 6379
+  session:
+    initializer:
+      enabled: true
+    storeType: redis
+org:
+  woehlke:
+    humanrights:
+      digital:
+        defense:
+          defcon1:
+            config:
+              loginUsername: "user"
+              loginPassword: "password"
+              loginPage: "/login"
+              failureForwardUrl: "/login"
+              defaultSuccessUrl: "/adm"
+              logoutRequestMatcher: "/logout"
+              logoutSuccessUrl: "/logout_success"
+              loginRole: "USER"
+              webSecurityConfigPublicPaths:
+                - "/"
+                #- "/imprint"
+                #- "/fehler"
+                #- "/datenschutz"
+                #- "/suche/formular"
+                #- "/suche/freitext/formular"
+                - "/login"
+                - "/welcome"
+                - "/logout_success"
+                - "/error"
+                - "/img/*"
+                - "/img/**"
+                - "/css/*"
+                - "/css/**"
+                - "/favicon/*"
+                - "/favicon/**"
+                - "/js/*"
+                - "/js/**"
+                - "/map-icons/*"
+                - "/map-icons/**"
+                - "/webjars/*"
+                - "/webjars/**"
