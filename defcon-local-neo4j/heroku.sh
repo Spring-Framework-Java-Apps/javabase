@@ -2,7 +2,7 @@
 
 source conf.sh
 
-./mvnw $DEFCON1_PROFILE_BUILD_JAR clean install
+../mvnw $DEFCON1_PROFILE_BUILD_JAR clean install
 
 # TODO: $DEFCON1_PROFILE_RUN_JAR_LIKE_HEROKU
 

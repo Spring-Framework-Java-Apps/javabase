@@ -1,0 +1,6 @@
+---
+applications:
+- name: defcon-cloudfoundry
+  memory: 1G
+  random-route: true
+  path: target/defcon-cloudfoundry-0.0.1-SNAPSHOT.jar
