@@ -10,6 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>defcon :: neo4j</name>
     <artifactId>defcon-local-neo4j</artifactId>
     <packaging>jar</packaging>
 

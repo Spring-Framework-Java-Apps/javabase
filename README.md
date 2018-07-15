@@ -198,6 +198,9 @@ Except where otherwise noted, Documentation of this work is licensed under [Crea
 
 ## My Bookmarks
 
+### Spring-Boot
+* using-boot-starter: https://docs.spring.io/spring-boot/docs/2.0.3.RELEASE/reference/htmlsingle/#using-boot-starter
+
 ### Neo4J
 
 * https://github.com/neo4j/neo4j
