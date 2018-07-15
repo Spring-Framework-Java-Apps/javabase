@@ -2,7 +2,7 @@ package org.woehlke.humanrights.digital.defense.defcon1.config;
 
 import org.neo4j.ogm.session.SessionFactory;
 import org.springframework.boot.autoconfigure.data.neo4j.Neo4jProperties;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+//import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -19,6 +19,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * Created by tw on 25.06.18.
+ *
+ * TODO: #38
  */
 @Configuration
 @EnableNeo4jRepositories(
@@ -31,8 +33,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableConfigurationProperties({
     JpaProperties.class,
-    Neo4jProperties.class,
-    DataSourceProperties.class
+    Neo4jProperties.class//,
+    //DataSourceProperties.class
 })
 public class StorageConfig {
 
@@ -41,12 +43,14 @@ public class StorageConfig {
         return new Neo4jTransactionManager(sessionFactory);
     }
 
+    // TODO: #38
     @Bean
     public JedisConnectionFactory jedisConnFactory() {
         JedisConnectionFactory fac = new JedisConnectionFactory(new RedisStandaloneConfiguration());
         return fac;
     }
 
+    // TODO: #38
     @Bean
     public RedisTemplate redisTemplate(){
         RedisTemplate redisTemplate = new RedisTemplate();
@@ -54,11 +58,13 @@ public class StorageConfig {
         return redisTemplate;
     }
 
+    // TODO: #38
     @Bean
     public RedisConnectionFactory redisConnectionFactory(JedisConnectionFactory jedisConnFactory) {
        return (RedisConnectionFactory) jedisConnFactory;
     }
 
+    // TODO: #38
     @Bean
     public RedisOperationsSessionRepository sessionRepository(RedisTemplate redisTemplate){
         return new RedisOperationsSessionRepository(redisTemplate);

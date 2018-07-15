@@ -25,6 +25,8 @@ import org.woehlke.humanrights.digital.defense.defcon1.config.properties.Applica
 
 /**
  * Created by tw on 24.06.18.
+ *
+ * TODO: #38
  */
 @Configuration
 @EnableWebMvc

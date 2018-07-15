@@ -22,6 +22,8 @@ import java.util.List;
 
 /**
  * @author Natural-Born-Coder
+ *
+ * TODO: #38
  */
 @Configuration
 @Profile({
@@ -70,8 +72,6 @@ public class StorageConfigurationEmbedded {
 	public SessionFactory sessionFactory(Driver neo4jDriver) {
         return new SessionFactory(neo4jDriver , packages );
 	}
-
-
 
     @Autowired
     private Neo4jConfigurationLogger neo4jConfigurationLogger;
