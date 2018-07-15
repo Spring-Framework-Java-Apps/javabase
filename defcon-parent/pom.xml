@@ -545,6 +545,8 @@
                 <configuration>
                     <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
                     <showAvatarImages>true</showAvatarImages>
+                    <dependencyLocationsEnabled>true</dependencyLocationsEnabled>
+                    <indentSize>2</indentSize>
                 </configuration>
             </plugin>
             <plugin>
@@ -590,6 +592,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-changes-plugin</artifactId>
                 <configuration>
+                    <feedType>atom_1.0</feedType>
                     <onlyMilestoneIssues>false</onlyMilestoneIssues>
                 </configuration>
                 <reportSets>

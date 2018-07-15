@@ -13,10 +13,10 @@
 	<artifactId>defcon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <modules>
-        <module>defcon-documentation</module>
 		<module>defcon-heroku-jpa</module>
         <module>defcon-local-neo4j</module>
         <module>defcon-cloudfoundry</module>
+        <module>defcon-documentation</module>
     </modules>
     <packaging>pom</packaging>
 
