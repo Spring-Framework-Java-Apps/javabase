@@ -2,13 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!--
-    <parent>
-        <artifactId>defcon1</artifactId>
-        <groupId>org.woehlke.humanrights.digital.defense</groupId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-    -->
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -24,6 +17,46 @@
     <packaging>pom</packaging>
 
     <name>defcon :: parent</name>
+
+    <organization>
+        <name>phasenraum2010</name>
+        <url>https://github.com/phasenraum2010</url>
+    </organization>
+
+    <inceptionYear>2018</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Natural-Born-Codert</name>
+            <url>https://twitter.com/port80guru</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/phasenraum2010/holohoax_StGB130.git</url>
+        <connection>scm:git:https://github.com/phasenraum2010/holohoax_StGB130.git</connection>
+        <developerConnection>scm:git:https://github.com/phasenraum2010/holohoax_StGB130.git</developerConnection>
+        <tag>master</tag>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/phasenraum2010/holohoax_StGB130/issues</url>
+    </issueManagement>
+
+    <distributionManagement>
+        <site>
+            <id>defcon.localhost</id>
+            <url>file://${project.basedir}/target/site-deployed</url>
+        </site>
+    </distributionManagement>
 
     <properties>
         <!-- basics -->
@@ -72,6 +105,9 @@
         <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
         <maven-site-plugin.version>3.7.1</maven-site-plugin.version>
         <jbake-maven-plugin.version>0.3.1</jbake-maven-plugin.version>
+        <maven-fluido-skin.version>1.7</maven-fluido-skin.version>
+        <maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version>
+        <maven-fluido-skin.version>1.7</maven-fluido-skin.version>
 
         <aspectj.version>1.8.9</aspectj.version>
 
@@ -237,16 +273,17 @@
                 <artifactId>popper.js</artifactId>
                 <version>${org.webjars.npm.popper.js}</version>
             </dependency>
-
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-stream-rabbit -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-stream-rabbit</artifactId>
                 <version>2.0.1.RELEASE</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.apache.maven.skins</groupId>
+                <artifactId>maven-fluido-skin</artifactId>
+                <version>${maven-fluido-skin.version}</version>
+            </dependency>
         </dependencies>
-
     </dependencyManagement>
 
     <build>
@@ -468,6 +505,11 @@
                     <artifactId>jbake-maven-plugin</artifactId>
                     <version>${jbake-maven-plugin.version}</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.skins</groupId>
+                    <artifactId>maven-fluido-skin</artifactId>
+                    <version>${maven-fluido-skin.version}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -502,7 +544,7 @@
                 <artifactId>maven-project-info-reports-plugin</artifactId>
                 <configuration>
                     <dependencyDetailsEnabled>true</dependencyDetailsEnabled>
-                    <dependencyLocationsEnabled>true</dependencyLocationsEnabled>
+                    <showAvatarImages>true</showAvatarImages>
                 </configuration>
             </plugin>
             <plugin>
@@ -512,6 +554,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>checkstyle.xml</configLocation>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
