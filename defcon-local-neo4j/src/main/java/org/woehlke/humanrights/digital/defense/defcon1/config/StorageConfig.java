@@ -1,8 +1,9 @@
 package org.woehlke.humanrights.digital.defense.defcon1.config;
 
 import org.neo4j.ogm.session.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.data.neo4j.Neo4jProperties;
-//import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.autoconfigure.orm.jpa.JpaProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -33,8 +34,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @EnableConfigurationProperties({
     JpaProperties.class,
-    Neo4jProperties.class//,
-    //DataSourceProperties.class
+    Neo4jProperties.class,
+    DataSourceProperties.class
 })
 public class StorageConfig {
 
@@ -68,6 +69,20 @@ public class StorageConfig {
     @Bean
     public RedisOperationsSessionRepository sessionRepository(RedisTemplate redisTemplate){
         return new RedisOperationsSessionRepository(redisTemplate);
+    }
+
+
+    private final JpaProperties jpaProperties;
+
+    private final Neo4jProperties neo4jProperties;
+
+    private final DataSourceProperties dataSourceProperties;
+
+    @Autowired
+    public StorageConfig(JpaProperties jpaProperties, Neo4jProperties neo4jProperties, DataSourceProperties dataSourceProperties) {
+        this.jpaProperties = jpaProperties;
+        this.neo4jProperties = neo4jProperties;
+        this.dataSourceProperties = dataSourceProperties;
     }
 
 }

@@ -35,7 +35,7 @@ public class StorageConfigurationDistributed {
 
 
     private final String packages[] = {
-        "org.woehlke.neo4j.example.storage.neo4j.domain"
+        "org.woehlke.humanrights.digital.defense.defcon1.storage.neo4j.domain"
     };
 
 

@@ -36,7 +36,7 @@ import java.util.List;
 })
 public class StorageConfigurationEmbedded {
 
-    private final String packages[] = { "org.woehlke.neo4j.example.storage.neo4j.domain" };
+    private final String packages[] = {  "org.woehlke.humanrights.digital.defense.defcon1.storage.neo4j.domain"  };
 
 	private final String graphDbFileName  = "target/var/graphDb";
 
