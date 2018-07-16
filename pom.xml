@@ -11,31 +11,23 @@
     </parent>
 
 	<artifactId>defcon</artifactId>
+
+    <!-- TODO: add issue: setup maven subprojects - artifact versions of project modules -->
 	<version>0.0.1-SNAPSHOT</version>
+
+    <!-- TODO: add issue: setup maven subprojects - properties -->
     <modules>
-		<module>defcon-heroku-jpa</module>
-        <module>defcon-local-neo4j</module>
-        <module>defcon-cloudfoundry</module>
-        <module>defcon-documentation</module>
+        <module>defcon-build</module>
+		<module>defcon-applications</module>
+        <module>defcon-engineering</module>
+        <module>defcon-insourcing</module>
     </modules>
     <packaging>pom</packaging>
 
-	<name>defcon :: defcon I :: </name>
+	<name>defcon :: We will die on Defcon I :: </name>
 	<description>Time for a Change</description>
 
-    <!--
-    TODO: #20
-	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-    -->
+    <!-- TODO: add issue: setup maven subprojects - site.xml for mvn site -->
 
     <build>
         <pluginManagement>
@@ -415,4 +407,19 @@
             </plugin>
         </plugins>
     </reporting>
+
+    <!--
+   TODO: #20
+   <repositories>
+       <repository>
+           <id>spring-milestones</id>
+           <name>Spring Milestones</name>
+           <url>https://repo.spring.io/milestone</url>
+           <snapshots>
+               <enabled>false</enabled>
+           </snapshots>
+       </repository>
+   </repositories>
+   -->
+
 </project>

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# TODO: add issue: remove this from git repo
 export DEFCON1_LOGIN_USERNAME=nbc
 export DEFCON1_LOGIN_PASSWORD=natural-born-coder
 export DEFCON1_GOOGLE_APS_API_KEY=AIzaSyCMWLD6SK1QY3f-94mDS6x7u_jxwYASgqY
@@ -25,7 +26,8 @@ export DEFCON1_PROFILE_TRAVIS='-Ptravis'
 export DEFCON1_PROFILE_RUN=$DEFCON1_PROFILE_DEFAULT
 export DEFCON1_PROFILE_RELEASE=$DEFCON1_PROFILE_TEST_embedded
 export DEFCON1_PROFILE_BUILD_JAR=$DEFCON1_PROFILE_DEFAULT
-# TODO
+
+# TODO: add issue
 export DEFCON1_PROFILE_RUN_JAR_LIKE_HEROKU=''
 
 export MAVEN_OPTS="-Xmx2048m"
@@ -34,7 +36,12 @@ export PORT=8080
 
 export JAVA_OPTIONS='-Xmx2048m -Xss4096k -Dfile.encoding=UTF-8'
 
+# Overwrite this in the submodules run.sh files for correct relative path
 export MVN_CMD='../mvnw'
+
+function mvn_validate(){
+    $MVN_CMD clean validate
+}
 
 function mvn_fast_build(){
     $MVN_CMD clean install
