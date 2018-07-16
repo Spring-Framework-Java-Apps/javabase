@@ -7,7 +7,7 @@ export MVN_CMD='./mvnw'
 
 #mvn_jbake_help
 #run_jbake_seed
-#mvn_jbake_run
+#mvn_jbake
 
 #mvn_fast_build
 #mvn_build
