@@ -15,19 +15,27 @@
     <dependencies>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-parent</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-build</artifactId>
+            <type>pom</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-engineering</artifactId>
+            <type>pom</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-prototyping</artifactId>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-applications</artifactId>
+            <type>pom</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
