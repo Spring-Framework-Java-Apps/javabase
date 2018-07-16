@@ -538,7 +538,7 @@
             </executions>
             <configuration>
                 <seedUrl>https://github.com/phasenraum2010/jbake-example-project-thymeleaf/zipball/master/</seedUrl>
-                <force>true</force>
+                <force>false</force>
                 <!--
                 <inputDirectory>${project.basedir}/src/main/resources</inputDirectory>
                 <outputDirectory>${project.build.directory}/classes</outputDirectory>
