@@ -24,23 +24,24 @@
         <dependencies>
             <dependency>
                 <groupId>org.woehlke.humanrights.digital.defense</groupId>
-                <artifactId>defcon-parent</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.woehlke.humanrights.digital.defense</groupId>
                 <artifactId>defcon-build</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.woehlke.humanrights.digital.defense</groupId>
                 <artifactId>defcon-engineering</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.woehlke.humanrights.digital.defense</groupId>
                 <artifactId>defcon-applications</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
+                <type>pom</type>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -48,19 +49,21 @@
     <dependencies>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-parent</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-build</artifactId>
+            <type>pom</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-engineering</artifactId>
+            <type>pom</type>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-applications</artifactId>
+            <type>pom</type>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
