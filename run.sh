@@ -106,7 +106,7 @@ function current_dev(){
 
     #mvn_validate
     #mvn_fast_build
-    #mvn_build
+    mvn_build
     #mvn_site
     #mvn_travis
     #mvn_heruko
