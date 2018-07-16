@@ -65,6 +65,10 @@
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-engineering</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-applications</artifactId>
+        </dependency>
         <!-- -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
