@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>defcon-cloud-apps</artifactId>
+        <artifactId>defcon-applications</artifactId>
         <groupId>org.woehlke.humanrights.digital.defense</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>defcon :: cloud-apps :: who-is-who :: rundfunk</name>
-    <artifactId>who-is-who-rundfunk</artifactId>
+    <name>defcon :: applications :: twitter :: cockpit</name>
+    <artifactId>defcon-data-processor</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -29,22 +29,6 @@
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-prototyping</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-data-warehouse</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-data-processor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-twitter-cockpit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-youtube-cockpit</artifactId>
         </dependency>
     </dependencies>
 

@@ -13,6 +13,17 @@
     <artifactId>defcon-documentation</artifactId>
     <packaging>jar</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-parent</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-build</artifactId>
+        </dependency>
+    </dependencies>
+
     <profiles>
         <profile>
             <id>default</id>

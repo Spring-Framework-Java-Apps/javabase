@@ -11,7 +11,16 @@
 
     <name>defcon :: build</name>
     <artifactId>defcon-build</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <dependencies>
+        <dependency>
+            <artifactId>defcon-parent</artifactId>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
     <profiles>
         <profile>

@@ -18,8 +18,9 @@
     <!-- TODO: add issue: setup maven subprojects - properties -->
     <modules>
         <module>defcon-build</module>
-		<module>defcon-applications</module>
         <module>defcon-engineering</module>
+        <module>defcon-prototyping</module>
+        <module>defcon-applications</module>
         <module>defcon-insourcing</module>
     </modules>
     <packaging>pom</packaging>

@@ -16,6 +16,21 @@
 	<name>defcon :: heroku</name>
 	<description>Demo project for Spring Boot</description>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.woehlke.humanrights.digital.defense</groupId>
+			<artifactId>defcon-parent</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.woehlke.humanrights.digital.defense</groupId>
+			<artifactId>defcon-build</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.woehlke.humanrights.digital.defense</groupId>
+			<artifactId>defcon-engineering</artifactId>
+		</dependency>
+	</dependencies>
+
     <!-- TODO: add issue: setup maven subprojects - properties -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

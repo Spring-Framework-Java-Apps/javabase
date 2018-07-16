@@ -19,6 +19,41 @@
         <module>defcon-heroku-jpa</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.woehlke.humanrights.digital.defense</groupId>
+                <artifactId>defcon-parent</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.woehlke.humanrights.digital.defense</groupId>
+                <artifactId>defcon-build</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.woehlke.humanrights.digital.defense</groupId>
+                <artifactId>defcon-engineering</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-parent</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-build</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-engineering</artifactId>
+        </dependency>
+    </dependencies>
+
     <profiles>
         <profile>
             <id>default</id>

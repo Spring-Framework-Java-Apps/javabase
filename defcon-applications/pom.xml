@@ -15,9 +15,55 @@
 
     <modules>
         <module>defcon-data-warehouse</module>
+        <module>defcon-data-processor</module>
         <module>defcon-twitter-cockpit</module>
+        <module>defcon-youtube-cockpit</module>
         <module>defcon-cloud-apps</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.woehlke.humanrights.digital.defense</groupId>
+                <artifactId>defcon-parent</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.woehlke.humanrights.digital.defense</groupId>
+                <artifactId>defcon-build</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.woehlke.humanrights.digital.defense</groupId>
+                <artifactId>defcon-engineering</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>org.woehlke.humanrights.digital.defense</groupId>
+                <artifactId>defcon-prototyping</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-parent</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-build</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-engineering</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-prototyping</artifactId>
+        </dependency>
+    </dependencies>
 
     <profiles>
         <profile>
