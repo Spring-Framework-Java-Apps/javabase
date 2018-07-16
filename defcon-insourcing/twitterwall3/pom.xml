@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <name>defcon :: insourcing :: spring-boot-starter-parent</name>
-    <artifactId>spring-boot-starter-parent</artifactId>
+    <artifactId>twitterwall3</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>

@@ -17,6 +17,7 @@
 
     <!-- TODO: add issue: setup maven subprojects - properties -->
     <modules>
+        <module>defcon-parent</module>
         <module>defcon-build</module>
         <module>defcon-engineering</module>
         <module>defcon-prototyping</module>

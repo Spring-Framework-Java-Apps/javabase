@@ -8,9 +8,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <name>defcon :: engineering :: clickdummy :: templating</name>
-    <artifactId>defcon-clickdummy-frontend</artifactId>
+    <name>defcon :: insourcing :: btw17kandidaten</name>
+    <artifactId>btw17kandidaten</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -21,6 +20,30 @@
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-build</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-engineering</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-prototyping</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-data-warehouse</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-data-processor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-twitter-cockpit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-youtube-cockpit</artifactId>
         </dependency>
     </dependencies>
 

@@ -15,6 +15,10 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>spring-boot-starter-parent</module>
+        <module>btw17kandidaten</module>
+        <module>twitterwall2</module>
+        <module>twitterwall3</module>
         <!--
         <module>defcon-clickdummy-frontend</module>
         <module>defcon-clickdummy-templating</module>
