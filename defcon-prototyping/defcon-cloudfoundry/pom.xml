@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>defcon :: cloudfoundry</name>
+    <name>defcon :: prototyping :: cloudfoundry</name>
     <artifactId>defcon-cloudfoundry</artifactId>
     <packaging>jar</packaging>
 

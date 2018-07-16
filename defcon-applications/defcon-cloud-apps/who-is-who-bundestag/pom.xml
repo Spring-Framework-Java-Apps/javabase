@@ -28,10 +28,6 @@
         </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-prototyping</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-data-warehouse</artifactId>
         </dependency>
         <dependency>
@@ -45,6 +41,10 @@
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-youtube-cockpit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>macports-dependencies-cockpit</artifactId>
         </dependency>
     </dependencies>
 

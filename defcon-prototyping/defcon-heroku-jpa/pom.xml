@@ -13,23 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>defcon :: heroku</name>
+	<name>defcon :: prototyping :: heroku jpa</name>
 	<description>Demo project for Spring Boot</description>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.woehlke.humanrights.digital.defense</groupId>
-			<artifactId>defcon-parent</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.woehlke.humanrights.digital.defense</groupId>
-			<artifactId>defcon-build</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.woehlke.humanrights.digital.defense</groupId>
-			<artifactId>defcon-engineering</artifactId>
-		</dependency>
-	</dependencies>
 
     <!-- TODO: add issue: setup maven subprojects - properties -->
 	<properties>
@@ -41,7 +26,46 @@
 		<spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 	</properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-task-dependencies</artifactId>
+                <version>${spring-cloud-task.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-dependencies</artifactId>
+                <version>${spring-boot-admin.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
 	<dependencies>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-parent</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-build</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-engineering</artifactId>
+        </dependency>
+        <!-- -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -295,32 +319,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-task-dependencies</artifactId>
-				<version>${spring-cloud-task.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>de.codecentric</groupId>
-				<artifactId>spring-boot-admin-dependencies</artifactId>
-				<version>${spring-boot-admin.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 	<build>
 		<plugins>

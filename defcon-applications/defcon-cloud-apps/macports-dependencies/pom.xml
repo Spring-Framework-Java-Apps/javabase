@@ -3,44 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>defcon</artifactId>
+        <artifactId>defcon-cloud-apps</artifactId>
         <groupId>org.woehlke.humanrights.digital.defense</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>defcon :: applications</name>
-    <artifactId>defcon-applications</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>defcon-data-warehouse</module>
-        <module>defcon-data-processor</module>
-        <module>defcon-twitter-cockpit</module>
-        <module>defcon-youtube-cockpit</module>
-        <module>macports-dependencies-cockpit</module>
-        <module>defcon-cloud-apps</module>
-    </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.woehlke.humanrights.digital.defense</groupId>
-                <artifactId>defcon-parent</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.woehlke.humanrights.digital.defense</groupId>
-                <artifactId>defcon-build</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.woehlke.humanrights.digital.defense</groupId>
-                <artifactId>defcon-engineering</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <name>defcon :: cloud-apps :: macports-dependencies</name>
+    <artifactId>macports-dependencies</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -54,6 +25,26 @@
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-engineering</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-data-warehouse</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-data-processor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-twitter-cockpit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>defcon-youtube-cockpit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.woehlke.humanrights.digital.defense</groupId>
+            <artifactId>macports-dependencies-cockpit</artifactId>
         </dependency>
     </dependencies>
 
