@@ -101,10 +101,10 @@ function current_test(){
 function current_dev(){
     echo "current_dev"
     #mvn_jbake_help
-    #run_jbake_seed
+    run_jbake_seed
     #mvn_jbake
 
-    mvn_validate
+    #mvn_validate
     #mvn_fast_build
     #mvn_build
     #mvn_site
