@@ -28,10 +28,6 @@
         </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-prototyping</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-data-warehouse</artifactId>
         </dependency>
         <dependency>
