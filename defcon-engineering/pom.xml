@@ -26,11 +26,6 @@
         <dependencies>
             <dependency>
                 <groupId>org.woehlke.humanrights.digital.defense</groupId>
-                <artifactId>defcon-parent</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>org.woehlke.humanrights.digital.defense</groupId>
                 <artifactId>defcon-build</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
@@ -38,10 +33,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.woehlke.humanrights.digital.defense</groupId>
-            <artifactId>defcon-parent</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.woehlke.humanrights.digital.defense</groupId>
             <artifactId>defcon-build</artifactId>
