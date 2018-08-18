@@ -10,6 +10,8 @@ addons:
       - postgresql-client-10
 services:
   - postgresql
+  - redis-server
+  - neo4j
 before_install:
   - sudo apt-get update
   - sudo apt-get install language-pack-de
@@ -25,7 +27,7 @@ before_script:
   - psql -c 'select * from version();' -U postgres
   - psql -c 'select * from version();' -U kandidatentest
 sudo: false
-script:  ./mvnw clean install jbake:generate site site:deploy -Ptravis -Dtest=AlphaTopLevelSuiteIT  -B -V
+script:  ./mvnw clean install jbake:generate site site:deploy -Ptravis -B -V
 
 
 
