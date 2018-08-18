@@ -38,23 +38,29 @@ export JAVA_OPTIONS='-Xmx2048m -Xss4096k -Dfile.encoding=UTF-8'
 
 # Overwrite this in the submodules run.sh files for correct relative path
 export MVN_CMD='../mvnw'
+export MVN_CMD_CLOUD_APPS='../mvnw'
 
+#TODO: #48
 function mvn_validate(){
     $MVN_CMD clean validate
 }
 
+#TODO: #47
 function mvn_fast_build(){
     $MVN_CMD clean install
 }
 
+#TODO: #46
 function mvn_build(){
     $MVN_CMD clean install dependency:tree
 }
 
+#TODO: #45
 function mvn_run(){
     $MVN_CMD $DEFCON1_PROFILE_RUN clean spring-boot:run
 }
 
+#TODO: #44
 function mvn_heruko(){
     export JAVA_OPTIONS='-Xmx300m -Xss512k -Dfile.encoding=UTF-8'
     $MVN_CMD $DEFCON1_PROFILE_RUN clean spring-boot:run
@@ -76,14 +82,28 @@ function mvn_jbake(){
     $MVN_CMD clean jbake:generate
 }
 
+#TODO: #42
+function mvn_site2(){
+    HERE=`pwd`
+    #cd defcon-applications/defcon-cloud-apps/
+    cd defcon-applications
+    $MVN_CMD_CLOUD_APPS -e -X clean site site:deploy
+    cd $HERE
+}
+#TODO: #42, #49
 function mvn_site(){
-    $MVN_CMD clean site site:deploy
+    #HERE=`pwd`
+    #cd defcon-applications/defcon-cloud-apps/
+    #cd defcon-applications
+    $MVN_CMD -e clean site site:deploy
+    #cd $HERE
 }
 
 function mvn_site_run(){
     $MVN_CMD clean site site:run
 }
 
+#TODO: #43
 function mvn_travis(){
-    $MVN_CMD clean jbake:generate site site:deploy -Ptravis -Dtest=AlphaTopLevelSuiteIT  -B -V
+    $MVN_CMD clean install jbake:generate site site:deploy -Ptravis -Dtest=AlphaTopLevelSuiteIT  -B -V
 }

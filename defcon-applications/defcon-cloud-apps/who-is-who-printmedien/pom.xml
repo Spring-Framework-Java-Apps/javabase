@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>defcon :: cloud-apps :: who-is-who :: Prinmedien</name>
+    <name>defcon :: cloud-apps :: who-is-who :: Printmedien</name>
     <artifactId>who-is-who-printmedien</artifactId>
     <packaging>jar</packaging>
 
