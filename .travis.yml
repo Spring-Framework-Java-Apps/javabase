@@ -25,7 +25,7 @@ before_script:
   - psql -c 'select * from version();' -U postgres
   - psql -c 'select * from version();' -U kandidatentest
 sudo: false
-script:  ./mvnw -B -V clean install jbake:generate site site:deploy -Ptravis -Dtest=AlphaTopLevelSuiteIT
+script:  ./mvnw clean install jbake:generate site site:deploy -Ptravis -Dtest=AlphaTopLevelSuiteIT  -B -V
 
 
 
