@@ -26,7 +26,7 @@
     </modules>
     <packaging>pom</packaging>
 
-	<name>defcon :: We will die on Defcon I :: </name>
+	<name>defcon :: We will die on Defcon I</name>
 	<description>Time for a Change</description>
 
     <!-- TODO: add issue: setup maven subprojects - site.xml for mvn site -->

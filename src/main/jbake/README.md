@@ -1,4 +1,4 @@
-jbake-example-project-thymeleaf
+defcon
 ========================
 
-Example project structure for JBake that uses Thymeleaf templates and Bootstrap.
+defcon :: We will die on Defcon I
