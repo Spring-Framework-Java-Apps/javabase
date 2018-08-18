@@ -107,5 +107,6 @@ function mvn_site_run(){
 function mvn_travis(){
     $MVN_CMD clean
     $MVN_CMD install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+    $MVN_CMD clean install jbake:generate site site:deploy -Ptravis -B -V
     #$MVN_CMD clean install jbake:generate site site:deploy -Ptravis -Dtest=AlphaTopLevelSuiteIT  -B -V
 }
