@@ -11,7 +11,7 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install language-pack-de
   - sudo /etc/init.d/postgresql stop
-  - sudo /etc/init.d/postgresql start 10
+  - sudo /etc/init.d/postgresql start 10.5
 before_script:
   - psql -c "CREATE USER kandidatentest WITH PASSWORD 'kandidatentestpwd' LOGIN SUPERUSER INHERIT CREATEDB CREATEROLE NOREPLICATION;" -U postgres
   - psql -c 'GRANT pg_signal_backend, postgres TO kandidatentest WITH ADMIN OPTION;' -U postgres
