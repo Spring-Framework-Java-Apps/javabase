@@ -62,10 +62,10 @@
         <!-- basics -->
         <java.version>1.8</java.version>
         <groovy-all.version>2.5.0</groovy-all.version>
-        <maven.version>3.5.3</maven.version>
+        <maven.version>3.3.9</maven.version>
 
         <!-- spring-boot -->
-        <spring-boot.version>2.0.3.RELEASE</spring-boot.version>
+        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
         <spring-boot-admin.version>2.0.1</spring-boot-admin.version>
         <spring-cloud-gcp.version>1.0.0.RC1</spring-cloud-gcp.version>
         <spring-cloud-services.version>2.0.1.RELEASE</spring-cloud-services.version>
