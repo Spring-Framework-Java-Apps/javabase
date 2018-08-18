@@ -35,5 +35,6 @@ buildNumber.properties
 /.nb-gradle/
 
 ### Application ####
+x.txt
 
 

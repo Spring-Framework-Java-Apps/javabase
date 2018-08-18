@@ -23,13 +23,5 @@ before_install:
   - sudo /etc/init.d/postgresql start 10
 before_script:
   - sleep 15
-  - psql -U postgres -c "CREATE USER travistest WITH PASSWORD 'travistestpwd' LOGIN SUPERUSER INHERIT CREATEDB CREATEROLE NOREPLICATION;"
-  - psql -U postgres -c 'GRANT pg_signal_backend, postgres TO travistest WITH ADMIN OPTION;'
-  - psql -U postgres -c "CREATE DATABASE travistest WITH OWNER = travistest TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'de_DE.UTF-8' LC_CTYPE = 'de_DE.UTF-8' CONNECTION LIMIT = -1;"
-  - psql -U postgres -c '\l'
-  - psql -U postgres -c '\dg'
-  - psql -U postgres -c '\dn'
-  - psql -U postgres -c 'select * from version();'
-  - psql -U travistest -c 'select * from version();'
 sudo: false
 script:  ./mvnw clean install jbake:generate site site:deploy -Ptravis -B -V
