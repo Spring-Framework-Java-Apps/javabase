@@ -23,5 +23,5 @@ before_install:
   - sudo /etc/init.d/postgresql start 10
 before_script:
   - sleep 15
-sudo: false
+sudo: required
 script:  ./mvnw clean install jbake:generate site site:deploy -Ptravis -B -V
