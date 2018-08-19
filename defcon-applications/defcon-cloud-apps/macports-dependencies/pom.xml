@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>defcon :: cloud-apps :: macports-dependencies</name>
+    <name>defcon :: cloud-apps :: macports :: deps</name>
     <artifactId>macports-dependencies</artifactId>
     <packaging>jar</packaging>
 
