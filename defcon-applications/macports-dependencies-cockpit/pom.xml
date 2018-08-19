@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <name>defcon :: applications :: macports-dependencies :: cockpit</name>
+    <name>defcon :: applications :: macports :: cockpit</name>
     <artifactId>macports-dependencies-cockpit</artifactId>
     <packaging>jar</packaging>
 

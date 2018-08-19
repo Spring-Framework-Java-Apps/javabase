@@ -347,12 +347,14 @@
                 <artifactId>spring-cloud-starter-zipkin-legacy</artifactId>
                 <version>1.3.4.RELEASE</version>
             </dependency>
+            <!--
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-sleuth-dependencies</artifactId>
                 <version>${org.springframework.cloud.version}</version>
                 <type>pom</type>
             </dependency>
+            -->
             <!--
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -365,7 +367,6 @@
                 <version>1.3.4.RELEASE</version>
             </dependency>
             -->
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-sleuth -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-sleuth</artifactId>
