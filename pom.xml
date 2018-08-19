@@ -486,26 +486,4 @@
         </plugins>
     </reporting>
 
-   <!--
-   TODO: #20
-   -->
-   <repositories>
-       <repository>
-           <id>spring-milestones</id>
-           <name>Spring Milestones</name>
-           <url>https://repo.spring.io/milestone</url>
-           <snapshots>
-               <enabled>false</enabled>
-           </snapshots>
-       </repository>
-       <repository>
-           <id>spring-plugins</id>
-           <name>Spring Plugins Repository</name>
-           <url>http://repo.spring.io/plugins-release</url>
-           <snapshots>
-               <enabled>false</enabled>
-           </snapshots>
-       </repository>
-   </repositories>
-
 </project>
