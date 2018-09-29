@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.4.RELEASE</version>
+        <version>2.0.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -35,20 +35,20 @@
     <developers>
         <developer>
             <name>Natural-Born-Codert</name>
-            <url>https://twitter.com/port80guru</url>
+            <url>https://twitter.com/ThomasWoehlke</url>
         </developer>
     </developers>
 
     <scm>
-        <url>https://github.com/phasenraum2010/holohoax_StGB130.git</url>
-        <connection>scm:git:https://github.com/phasenraum2010/holohoax_StGB130.git</connection>
-        <developerConnection>scm:git:https://github.com/phasenraum2010/holohoax_StGB130.git</developerConnection>
+        <url>https://github.com/phasenraum2010/javabase.git</url>
+        <connection>scm:git:https://github.com/phasenraum2010/javabase.git</connection>
+        <developerConnection>scm:git:https://github.com/phasenraum2010/javabase.git</developerConnection>
         <tag>master</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/phasenraum2010/holohoax_StGB130/issues</url>
+        <url>https://github.com/phasenraum2010/javabase/issues</url>
     </issueManagement>
 
     <distributionManagement>
@@ -65,8 +65,8 @@
         <maven.version>3.3.9</maven.version>
 
         <!-- spring-boot -->
-        <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
-        <spring-boot-admin.version>2.0.1</spring-boot-admin.version>
+        <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
+        <spring-boot-admin.version>2.0.3</spring-boot-admin.version>
         <spring-cloud-gcp.version>1.0.0.RC1</spring-cloud-gcp.version>
         <spring-cloud-services.version>2.0.1.RELEASE</spring-cloud-services.version>
         <spring-cloud-task.version>2.0.0.RELEASE</spring-cloud-task.version>
@@ -75,8 +75,8 @@
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
 
         <!-- Spring Web MVC -->
-        <org.springframework.spring.version>5.0.7.RELEASE</org.springframework.spring.version>
-        <org.springframework.security.version>5.0.6.RELEASE</org.springframework.security.version>
+        <org.springframework.spring.version>5.1.0.RELEASE</org.springframework.spring.version>
+        <org.springframework.security.version>5.1.0.RELEASE</org.springframework.security.version>
 
         <!-- Frontend -->
         <org.webjars.bootstrap.version>3.3.7</org.webjars.bootstrap.version>
@@ -309,7 +309,6 @@
                 <artifactId>spring-cloud-starter-sleuth</artifactId>
                 <version>${org.springframework.cloud.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-config</artifactId>
@@ -317,7 +316,7 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-netflix-hystrix-stream</artifactId>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
                 <version>${org.springframework.cloud.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-stream-binder-kafka -->
@@ -337,7 +336,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-                <version>2.0.0.RELEASE</version>
+                <version>2.0.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -376,8 +375,8 @@
               -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-netflix-hystrix-contract</artifactId>
-                <version>2.0.0.RELEASE</version>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+                <version>2.0.1.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -794,6 +793,14 @@
     TODO: #20
     -->
     <repositories>
+        <repository>
+            <id>spring-release</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/release</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>

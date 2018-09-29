@@ -8,7 +8,7 @@ Base Project for practical experience and projects with JAVA
 
 ## URLs
 + Demo on Heroku [https://holohoax_stgb130.herokuapp.com/]
-+ Github [https://github.com/phasenraum2010/holohoax_StGB130]
++ Github [https://phasenraum2010.github.io/javabase]
 + Maven Reports [https://holohoax_StGB130.herokuapp.com/maven]
 
 ## public BETA
@@ -69,7 +69,7 @@ Werfen Sie dazu bitte auch einen Blick auf: [Needing Help Items on Github (Label
 
 ### Repository
 - Get Source Code: git clone [https://github.com/phasenraum2010/javabase.git]
-- Issues: [https://github.com/phasenraum2010/holohoax_StGB130/issues]
+- Issues: [https://phasenraum2010.github.io/javabase/issues]
 
 ### heroku CLI
 - export APP_NAME=stopholohoaxstgb130
@@ -152,7 +152,7 @@ Except where otherwise noted, Documentation of this work is licensed under [Crea
 
 ## Thank Your for your attention and interest and reading until here
 
-[Github Repository]:https://github.com/phasenraum2010/holohoax_StGB130 (Github Repository)
+[Github Repository]:https://phasenraum2010.github.io/javabase (Github Repository)
 [juris GmbH, Saarbrücken und BMJV]:https://www.gesetze-im-internet.de/stgb/__130.html] (for the Law STGB 130)
 [GNU GENERAL PUBLIC LICENSE Version 3]:https://www.gnu.org/licenses/gpl-3.0.de.html (https://www.gnu.org/licenses/gpl-3.0.de.html)
 [Creative Commons CC BY-ND 3.0]:http://creativecommons.org/licenses/by-nd/3.0/ (http://creativecommons.org/licenses/by-nd/3.0/)
@@ -170,20 +170,20 @@ Except where otherwise noted, Documentation of this work is licensed under [Crea
 [jquery]: http://jquery.org (jquery)
 [google-analytics]:https://analytics.google.com/analytics/web/ (Google Analytics)
 [google-maps-javascript-api]:https://developers.google.com/maps/documentation/javascript/ (Google Maps)
-[https://twitter.com/ThomasWoehlke]:https://twitter.com/port80guru (Twitter port80guru)
+[https://twitter.com/ThomasWoehlke]:https://twitter.com/ThomasWoehlke (Twitter ThomasWoehlke)
 [https://github.com/phasenraum2010]:https://github.com/phasenraum2010 (Github: phasenraum2010)
 [https://thomas-woehlke.blogspot.de]:https://port80gru.blogspot.de (Blog port80guru)
-[av-site]: https://twitter.com/port80guru  (Twitter port80guru)
+[av-site]: https://twitter.com/ThomasWoehlke  (Twitter ThomasWoehlke)
 [donate]: https://www.paypal.me/ThomasWoehlke (donate via paypal)
 [maven Remote Reporitories by Artifactory on localhost]:http://localhost:8081/artifactory/webapp/#/admin/repositories/remote (maven Remote Reporitories by Artifactory on localhost)
-[https://github.com/phasenraum2010/holohoax_StGB130.git]:https://github.com/phasenraum2010/holohoax_StGB130.git (git clone url)
-[https://github.com/phasenraum2010/holohoax_StGB130/issues]:https://github.com/phasenraum2010/holohoax_StGB130/issues (Issues at github)
-[javabase-issues]: https://github.com/phasenraum2010/holohoax_StGB130/issues
+[https://phasenraum2010.github.io/javabase.git]:https://phasenraum2010.github.io/javabase.git (git clone url)
+[https://phasenraum2010.github.io/javabase/issues]:https://phasenraum2010.github.io/javabase/issues (Issues at github)
+[javabase-issues]: https://phasenraum2010.github.io/javabase/issues
 [necolas's guidelines]: http://github.com/necolas/issue-guidelines/#readme
-[Git repository at GitHub]:https://github.com/phasenraum2010/holohoax_StGB130.git
+[Git repository at GitHub]:https://phasenraum2010.github.io/javabase.git
 [GitHub pull requests]: http://help.github.com/articles/using-pull-requests
-[Needing Help Items on Github (Project)]:https://github.com/phasenraum2010/holohoax_StGB130/projects/1
-[Needing Help Items on Github (Labels)]::https://github.com/phasenraum2010/holohoax_StGB130/labels/help%20wanted
+[Needing Help Items on Github (Project)]:https://phasenraum2010.github.io/javabase/projects/1
+[Needing Help Items on Github (Labels)]:https://phasenraum2010.github.io/javabase/labels/help%20wanted
 [heroku command-line]:[https://devcenter.heroku.com/categories/command-line]
 [heroku-cli]:https://devcenter.heroku.com/articles/heroku-cli
 [spring:boot]:https://projects.spring.io/spring-boot/ 
