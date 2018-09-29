@@ -4,7 +4,7 @@ Base Project for practical experience and projects with JAVA
 
 ## Abstract
 + App the Browse Data for #btw17 with [spring:boot] for [heroku]
-+ More Info: [holohoax_StGB130 github page]
++ More Info: [javabase github page]
 
 ## URLs
 + Demo on Heroku [https://holohoax_stgb130.herokuapp.com/]
@@ -18,7 +18,7 @@ Einige Funktionen der Software werden aktuell noch weiter entwickelt und sukzess
 Die Daten können Inkonsistenzen oder Fehler enthalten.
 Die Funktionen der Software können Inkonsistenzen oder Fehler enthalten.
 Sie können Fehler bei Daten oder Software-Funktionen melden unter: 
-[https://github.com/phasenraum2010/holohoax_StGB130/issues]
+[https://github.com/phasenraum2010/javabase/issues]
 Das Hosting bei Heroku ist in Europa, nicht in den USA.
 Das Hosting bei Heroku ist der kleinste, kostenlose, Tarif. 
 Das kann je nach Anzahl der Besucher langsam werden. 
@@ -68,7 +68,7 @@ Werfen Sie dazu bitte auch einen Blick auf: [Needing Help Items on Github (Label
 ## Development 
 
 ### Repository
-- Get Source Code: git clone [https://github.com/phasenraum2010/holohoax_StGB130.git]
+- Get Source Code: git clone [https://github.com/phasenraum2010/javabase.git]
 - Issues: [https://github.com/phasenraum2010/holohoax_StGB130/issues]
 
 ### heroku CLI
@@ -104,7 +104,7 @@ Werfen Sie dazu bitte auch einen Blick auf: [Needing Help Items on Github (Label
 * Contribute your fixes and new features back to the main codebase using [GitHub pull requests]
 
 ### Issues (bug and feature tracker)
-* Please report any bugs found, feature requests or other issues on [holohoax_StGB130-issues]
+* Please report any bugs found, feature requests or other issues on [javabase-issues]
 * When creating a new issue, try following [necolas's guidelines]
 
 ## Support
@@ -178,7 +178,7 @@ Except where otherwise noted, Documentation of this work is licensed under [Crea
 [maven Remote Reporitories by Artifactory on localhost]:http://localhost:8081/artifactory/webapp/#/admin/repositories/remote (maven Remote Reporitories by Artifactory on localhost)
 [https://github.com/phasenraum2010/holohoax_StGB130.git]:https://github.com/phasenraum2010/holohoax_StGB130.git (git clone url)
 [https://github.com/phasenraum2010/holohoax_StGB130/issues]:https://github.com/phasenraum2010/holohoax_StGB130/issues (Issues at github)
-[holohoax_StGB130-issues]: https://github.com/phasenraum2010/holohoax_StGB130/issues
+[javabase-issues]: https://github.com/phasenraum2010/holohoax_StGB130/issues
 [necolas's guidelines]: http://github.com/necolas/issue-guidelines/#readme
 [Git repository at GitHub]:https://github.com/phasenraum2010/holohoax_StGB130.git
 [GitHub pull requests]: http://help.github.com/articles/using-pull-requests
@@ -188,4 +188,4 @@ Except where otherwise noted, Documentation of this work is licensed under [Crea
 [heroku-cli]:https://devcenter.heroku.com/articles/heroku-cli
 [spring:boot]:https://projects.spring.io/spring-boot/ 
 [heroku]:https://heroku.com
-[holohoax_StGB130 github page]:https://phasenraum2010.github.io/holohoax_StGB130/
+[javabase github page]:https://phasenraum2010.github.io/javabase/
