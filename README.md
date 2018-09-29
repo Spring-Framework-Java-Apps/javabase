@@ -1,12 +1,6 @@
-# holohoax_StGB130
+# javabase
 
-I am fuckep up by visitung my favorite web page an finding commentaries containing the hardest nazi hatespeech.
-
-**Crime against Humanity is not proctected by Freemdom of Speech**
-
-## defcon1
-
-filters hashtags from social media, stores it for further research and law enforcement e.g. STGB130
+Base Project for practical experience and projects with JAVA
 
 ## Abstract
 + App the Browse Data for #btw17 with [spring:boot] for [heroku]
