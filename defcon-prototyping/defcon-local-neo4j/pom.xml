@@ -42,14 +42,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-batch</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cloud-connectors</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <!--
         TODO: #30
@@ -115,14 +118,17 @@
         <dependency>
             <groupId>io.pivotal.spring.cloud</groupId>
             <artifactId>spring-cloud-services-starter-circuit-breaker</artifactId>
+            <version>2.0.1.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>io.pivotal.spring.cloud</groupId>
             <artifactId>spring-cloud-services-starter-config-client</artifactId>
+            <version>2.0.1.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>io.pivotal.spring.cloud</groupId>
             <artifactId>spring-cloud-services-starter-service-registry</artifactId>
+            <version>2.0.1.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
