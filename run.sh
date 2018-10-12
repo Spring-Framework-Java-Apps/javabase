@@ -104,10 +104,10 @@ function current_dev(){
     #run_jbake_seed
     #mvn_jbake
 
-    #mvn_validate
-    #mvn_fast_build
-    #mvn_build
-    #mvn_site
+    mvn_validate
+    mvn_fast_build
+    mvn_build
+    mvn_site
     mvn_travis
     #mvn_heruko
     #mvn_run
