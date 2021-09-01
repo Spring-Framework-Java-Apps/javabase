@@ -86,7 +86,7 @@
         <thymeleaf-spring-data-dialect.version>3.3.1</thymeleaf-spring-data-dialect.version>
 
         <!-- Spring Data und Neo4J -->
-        <neo4j.version>3.1.9</neo4j.version>
+        <neo4j.version>3.5.0</neo4j.version>
         <neo4j-ogm.version>3.1.0</neo4j-ogm.version>
         <org.postgresql.version>42.2.2</org.postgresql.version>
 
